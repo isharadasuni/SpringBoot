@@ -6,9 +6,14 @@ import org.springframework.stereotype.Component;
 
 public class MyFirst {
 
-    public String sayHello(){
-    return "Hello form MyFirst class";
+
+    private String myVar;
+
+    public MyFirst(String myVar) {
+        this.myVar = myVar;
     }
 
-
+    public String sayHello(){
+        return "Hello from MyFirst class ==> "+ myVar;
+    }
 }
