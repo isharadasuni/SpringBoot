@@ -16,6 +16,8 @@ public class SampleApplication {
 		MyFirst myFirst = ctx.getBean("myFirstBean", MyFirst.class);
 		System.out.println(myFirst.sayHello());
 
+		FirstService firstService = ctx.getBean(FirstService.class);
+		System.out.println(firstService.tellStory());
 
 	}
 
